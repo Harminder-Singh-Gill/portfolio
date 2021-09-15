@@ -304,19 +304,20 @@ header{
     width: 180px;
 }
 
+
 .logo-images{
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px , 1fr));
+    align-self: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
     grid-auto-rows: 1fr;
     gap:3em;
+    width: 100%;
+    min-width: 35%;
 }
+
 
 .logos img{
   width: 60px;
-}
-
-#logo p{
-    font-size: 0.85rem;
 }
 
  .logos p{
@@ -549,13 +550,15 @@ header{
 }
 
 .footer-icons{
-    width: 27%;
-    padding-left: 1em;
-    margin: 0% auto;
+    display:flex;
+    justify-content: center;
+    gap:0.50em;
+    margin-top: 0.85em;
+   
 }
 
 .footer-icons img{
-    width: 25px;
+    width: 40px;
 }
  
 @media screen and (min-width: 800px){
@@ -828,23 +831,9 @@ header{
         justify-content: flex-end;
     }
 
-    .logo-images{
-        display: grid;
-        align-self: center;
-        grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
-        grid-auto-rows: 1fr;
-        gap:3em;
-        width: 100%;
-        min-width: 35%;
-    }
 
     .logos img{
         width: 70px;
-    }
-
-    #logo p{
-        font-size: 0.80rem;
-        color:white;
     }
 
      .logos p{
@@ -1088,15 +1077,9 @@ header{
          font-weight: 900;
      }
 
-     .footer-icons{
-         width: 10%;
-         padding-left: 2em;
-         margin: 0.30em auto;
-     }
-
      .footer-icons img{
          width: 40px;
-     }
+     } 
 }
 
 
