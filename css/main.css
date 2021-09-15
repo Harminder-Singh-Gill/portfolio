@@ -986,6 +986,9 @@ header{
     .contact-container{
          width: 100%;
          padding: 1em;
+         margin-top: 8em;
+         padding-left: 7em;
+         margin-bottom: 3em;
          display: flex;
          flex-direction: row;
          justify-content: flex-end;
@@ -993,11 +996,15 @@ header{
 
     .ill-2{
         flex-basis: 30%;
-        padding-right: 10em;
         display: flex;
+        width: 100%;
         justify-content: center;
         align-items: center;
         order: 1;
+    }
+
+    .ill-2 img{
+        width: 100%;
     }
     .contact-container #contact{
         flex-basis: 40%;
