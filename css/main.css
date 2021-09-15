@@ -547,6 +547,16 @@ header{
    font-size: 1em;
    font-weight: 500;
 }
+
+.footer-icons{
+    width: 27%;
+    padding-left: 1em;
+    margin: 0% auto;
+}
+
+.footer-icons img{
+    width: 25px;
+}
  
 @media screen and (min-width: 800px){
    
@@ -815,7 +825,6 @@ header{
     .skills-image img{
         margin-top: 7em;
         width: 300px;
-        min-width: 180px;
         justify-content: flex-end;
     }
 
@@ -829,13 +838,13 @@ header{
         min-width: 35%;
     }
 
-    #logo p{
-        font-size: 0.85rem;
-        color:white;
+    .logos img{
+        width: 70px;
     }
 
-    .logos{
-        padding: 0%;
+    #logo p{
+        font-size: 0.80rem;
+        color:white;
     }
 
      .logos p{
@@ -933,14 +942,14 @@ header{
 
      .web-content h1{
          text-align: left;
-         font-size:1.5em;
+         font-size:1.5rem;
          color: #292a2c;
          margin-bottom: 1em;
      }
 
      .web-content p{
         text-align: left;
-         font-size:1em;
+         font-size:1rem;
          color:#292a2c;
      }
 
@@ -1077,6 +1086,16 @@ header{
          text-align: center;
          font-size: 1em;
          font-weight: 900;
+     }
+
+     .footer-icons{
+         width: 10%;
+         padding-left: 2em;
+         margin: 0.30em auto;
+     }
+
+     .footer-icons img{
+         width: 40px;
      }
 }
 
