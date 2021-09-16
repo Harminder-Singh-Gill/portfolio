@@ -11,6 +11,7 @@
 
  body{
     font-family: Montserrat;
+    letter-spacing: 1px;
  }
 
 *, *::before, *::after{
@@ -334,6 +335,10 @@ header{
 
     .p2{
         margin-bottom: 5em;
+    }
+     
+    .p2 p{
+        padding: 1em;
     }
 
     .info a{
