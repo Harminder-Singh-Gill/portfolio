@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --background-1: rgba(0, 0, 0, 0.9);
+}
+
+ body{
+    font-family: Montserrat;
+ }
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+header{
+    display: inline-block;
+    background-color: var(--background-1);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    scroll-snap-align: start;
+}
+
+.logo{
+    color: #fc0;
+    font-weight: 800;
+    padding: 0.80em;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: var(--background-1);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+.nav ul{
+    list-style: none;
+}
+
+.nav li {
+    margin-bottom: 1.2em;
+    margin-left: 1.2em;
+}
+
+.nav a{
+    cursor: pointer;
+    padding: 0.50em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 120ms ease-in-out;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #fc0;
+}
+
+.nav-toggle:checked ~ .nav {
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ .nav a {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 200ms ease-in-out 350ms;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top:0;
+    left:0;
+    margin-left: 1.2em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+.content {
+    font-family: Montserrat;
+}
+
+
+.contact-container{
+    width: 100%;
+    padding: 0.30em;
+    margin-top: 8em;
+}
+
+.contact-container #contact{
+   display: block;
+   border: 2px solid black;
+   padding: 0.50em;
+   width: 80%;
+   height: auto;
+   margin: 0% auto;
+   background-image: url("../static/email-pattern.png");
+}
+
+#contact h1{
+    font-size: 1em;
+   text-align: center;
+   padding: 1em;
+}
+
+#contact p{
+   font-size: 0.80rem;
+   padding: 1em;
+   text-align: left;
+   overflow: auto;
+}
+
+.forum-content{
+   display: flex;
+   padding: 0.50em;
+   flex-direction: column;
+}
+
+#contact input{
+   padding: 1em;
+   margin: 1em;
+}
+
+#contact textarea{
+   padding: 3em;
+   margin: 1em;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 80%;
+    border: none;
+    background:#F2522E;
+    color: #FFF;
+    padding: 1em;
+    margin: 1em auto;
+    font-size: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background:#c04125;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+
+.footer{
+    width: 100%;
+    position: sticky;
+    background-color:#3D2F59;
+    margin-top: 4em;
+    padding: 2em;
+}
+
+.footer h1{
+   color:#D9A60D;
+   text-align: center;
+   font-size: 1em;
+   font-weight: 500;
+}
+
+.footer-icons{
+    display:flex;
+    justify-content: center;
+    gap:0.50em;
+    margin-top: 0.85em;
+   
+}
+
+.footer-icons img{
+    width: 40px;
+}
+
+@media screen and (min-width: 800px){
+   
+    .nav-toggle-label{
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr);
+    }
+
+    .logo {
+        grid-column: 1 / span 2;
+    }
+
+    .nav{
+        all: unset;
+        grid-column: 3 / 5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav a{
+        cursor: pointer;
+        opacity: 1;
+        position: relative;
+    }
+
+    .nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+    
+    .nav a::after {
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: wheat;
+        position: absolute;
+        top: -.75;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transform: scale(0,1);
+        transform-origin: left;
+        transition: transform ease-in-out 250ms;
+        z-index: -1;
+    }
+
+    .nav a:hover::after{
+        background-color: #fc0;
+        color:black;
+        height: 100%;
+        width: 100%;
+        transform: scale(1,1);
+        z-index: -1;
+    }
+    
+    .content {
+        font-family: Montserrat;
+    }
+
+    .contact-container{
+        width: 100%;
+        padding: 1em;
+        margin-top: 8em;
+        margin-bottom: 3em;
+   }
+
+   .contact-container #contact{
+    width: 40%;
+    margin: 0% auto;
+    border: 2px solid black;
+    padding: 1em;
+    background-image: url("../static/email-pattern.png");
+   }
+
+    #contact h1{
+        text-align: center;
+        padding: 1em;
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+
+    #contact p{
+        padding: 1em;
+        padding-left: 2.5em;
+        text-align: left;
+        overflow: auto;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .forum-content{
+        display: flex;
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    #contact input{
+        padding: 1em;
+        margin: 1em;
+    }
+    
+    #contact textarea{
+        padding: 3em;
+        margin: 1em;
+    }
+
+    #contact button[type="submit"] {
+        cursor: pointer;
+        width: 95%;
+        border: none;
+        background: #F2522E;
+        color: #FFF;
+        padding: 1em;
+        margin: 1em;
+        font-size: 15px;
+    }
+    
+    #contact button[type="submit"]:hover {
+        background:#c04125;
+        color: white;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .footer{
+        width: 100%;
+        position: sticky;
+        background-color:#3D2F59;
+        margin-top: 2em;
+        padding: 3.5em;
+    }
+
+    .footer h1{
+        color:#D9A60D;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    .footer-icons img{
+        width: 40px;
+    } 
+
+}

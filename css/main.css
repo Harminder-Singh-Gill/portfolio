@@ -201,13 +201,13 @@ header{
 
 .fancy::before{
     background-color:white;
-    animation: typewriter 3s steps(7) 1s infinite;
+    animation: typewriter 3s steps(7) 3s infinite;
 }
 
 .fancy::after{
     width: 0.125em;
     color:#3D2F59;;
-    animation: typewriter 3s steps(7) 1s infinite, blank 750ms steps(7) infinite;
+    animation: typewriter 3s steps(7) 3s infinite, blank 3s steps(7) 3s infinite;
 
 }
 
@@ -458,14 +458,14 @@ header{
 
 .contact-container{
     width: 100%;
-    padding: 1em;
+    padding: 0.30em;
     margin-top: 4em;
 }
 
 .contact-container #contact{
    display: block;
    border: 2px solid black;
-   padding: 1em;
+   padding: 0.50em;
    width: 80%;
    height: auto;
    margin: 0% auto;
@@ -497,7 +497,7 @@ header{
 
 .forum-content{
    display: flex;
-   padding: 1em;
+   padding: 0.50em;
    flex-direction: column;
 }
 
@@ -689,8 +689,8 @@ header{
 
     .intro-content .fancy{
         position: relative;
-        font-size: 1.5em;
-        font-family: "source code pro", monospace;
+        font-size: 1.3em;
+        font-family:'monospace'; 
         color:#3D2F59;
         font-weight: 800;
     }
@@ -707,14 +707,13 @@ header{
 
     .fancy::before{
         background-color:white;
-        animation: typewriter 3s steps(7) 1s infinite;
+        animation: typewriter 3s steps(7) 3s infinite;
     }
 
     .fancy::after{
-        width: 0.125em;
+        width: 0.1em;
         background-color: #3D2F59;
-        animation: typewriter 3s steps(7) 1s infinite, blank 750ms steps(7) infinite;
-
+        animation: typewriter 3s steps(7) 3s infinite, blank 3s steps(7) 3s infinite;
     }
 
     @keyframes typewriter{
@@ -752,7 +751,7 @@ header{
         background-color:#F2522E; 
         border-radius: 8px;
         color: white;
-        padding: 1.2em 0.60em;
+        padding: 1.2em 0.90em;
         margin-bottom: 1em;
         justify-content: flex-end;
         opacity: 0;
@@ -774,7 +773,7 @@ header{
         color: white;
         background-color: #c04125;
         margin-bottom: 1em;
-        padding: 1.2em 0.60em;
+        padding: 1.2em 0.90em;
         justify-content: flex-end;
         opacity: 0;
         transform: translateX(3rem);
@@ -868,7 +867,6 @@ header{
      .player-image{
          flex-basis: 100%;
          padding: 1em;
-         border-radius: 5px;
          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
      }
       
@@ -914,7 +912,6 @@ header{
          padding: 1em;
          height: 100%;
          width: 100%;
-         border-radius: 15px;
          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
      }
 
@@ -1004,6 +1001,7 @@ header{
     .ill-2 img{
         width: 100%;
     }
+    
     .contact-container #contact{
         flex-basis: 40%;
         border: 2px solid black;
@@ -1045,7 +1043,7 @@ header{
 
     #contact button[type="submit"] {
         cursor: pointer;
-        width: 100%;
+        width: 95%;
         border: none;
         background: #F2522E;
         color: #FFF;
