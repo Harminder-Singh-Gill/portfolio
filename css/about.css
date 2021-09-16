@@ -128,6 +128,82 @@ header{
     margin-top: 8em;
 }
 
+
+.pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0% auto;
+}
+
+.pic img{
+    width: 250px;
+    clip-path: circle();
+}
+ 
+.info {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.info h1{
+    font-size: 1rem;
+    margin: 1.3em 0em;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.info p{
+    font-size: 1rem;
+    padding: 0.85em 0em;
+    font-weight: 500;
+}
+
+.p2{
+    margin-bottom: 3em;
+}
+
+.info a{
+    cursor: pointer;
+    font-size: 0.80rem;
+    text-decoration: none;
+    background-color:#F2522E;
+    box-shadow: 5px black;
+    border-radius: 8px;
+    color: white;
+    padding: 0.85em 1em;
+    margin: 0% auto;
+    transform-origin: left;
+    transform: translateY(3rem);
+    animation: fadeIn 3s ease forwards;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.info a:hover{
+    cursor: pointer;
+   font-size: 0.80rem;
+   text-decoration: none;
+   background-color:#c04125;
+   border: 1px solid black;
+   box-shadow: 5px black;
+   border-radius: 8px;
+   color: white;
+   padding: 0.85em 1em;
+   margin: 0% auto;
+   transform-origin: left;
+   transform: translateY(3rem);
+   animation: fadeIn 3s ease forwards;
+   -webkit-transition: background 0.3s ease-in-out;
+   -moz-transition: background 0.3s ease-in-out;
+   transition: background-color 0.3s ease-in-out;
+
+}
+
 .footer{
     width: 100%;
     position: sticky;
@@ -139,7 +215,7 @@ header{
 .footer h1{
    color:#D9A60D;
    text-align: center;
-   font-size: 1em;
+   font-size: 1rem;
    font-weight: 500;
 }
 
@@ -222,6 +298,76 @@ header{
     .content {
         font-family: Montserrat;
     }
+
+    .pic{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0% auto;
+    }
+
+    .pic img{
+        width: 350px;
+        clip-path: circle();
+    }
+     
+    .info {
+        width: 60%;
+        margin: 6em auto;
+        padding: 3em;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .info h1{
+        font-size: 1.8rem;
+        margin: 1.3em 0em;
+        font-weight: 800;
+        text-decoration: underline;
+    }
+
+    .info p{
+        font-size: 1.2rem;
+        padding: 0.85em 0em;
+        font-weight: 500;
+    }
+
+    .p2{
+        margin-bottom: 5em;
+    }
+
+    .info a{
+        cursor: pointer;
+        font-size: 1rem;
+        text-decoration: none;
+        box-shadow: 3px black;
+        background-color:#F2522E; 
+        border-radius: 8px;
+        color: white;
+        padding: 1em 1.5em;
+        margin-bottom: 1em;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .info a:hover{
+        cursor: pointer;
+        font-size: 1rem;
+        text-decoration: none;
+        background-color: black;
+        border: 1px solid black;
+        box-shadow: 3px black;
+        border-radius: 8px;
+        color: white;
+        background-color: #c04125;
+        margin-bottom: 1em;
+        padding: 1em 1.5em;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
+
     .footer{
         width: 100%;
         position: sticky;
@@ -233,7 +379,7 @@ header{
     .footer h1{
         color:#D9A60D;
         text-align: center;
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 900;
     }
 

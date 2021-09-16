@@ -207,7 +207,7 @@ header{
 .footer h1{
    color:#D9A60D;
    text-align: center;
-   font-size: 1em;
+   font-size: 1rem;
    font-weight: 500;
 }
 
@@ -368,7 +368,7 @@ header{
     .footer h1{
         color:#D9A60D;
         text-align: center;
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 900;
     }
 
