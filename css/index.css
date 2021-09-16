@@ -185,7 +185,7 @@ header{
     position: relative;
     font-size: 1.5rem;
     color:#3D2F59;
-    font-family: "source code pro", monospace;
+    font-family:'monospace';
     font-weight: 800;
 }
 
@@ -201,13 +201,13 @@ header{
 
 .fancy::before{
     background-color:white;
-    animation: typewriter 3s steps(7) 3s infinite;
+    animation: typewriter 2s steps(7) 3s infinite;
 }
 
 .fancy::after{
-    width: 0.125em;
+    width: 0.1em;
     color:#3D2F59;;
-    animation: typewriter 3s steps(7) 3s infinite, blank 3s steps(7) 3s infinite;
+    animation: typewriter 3s steps(7) 3s infinite, blank 3.1s steps(7) 3s infinite;
 
 }
 
