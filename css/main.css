@@ -809,7 +809,7 @@ header{
 
     .skills > *:nth-child(2){
         flex-basis: 20%;
-        background-color: #D9A60D;
+        background-color:lightskyblue;
     }
 
     .skills-info h1{
