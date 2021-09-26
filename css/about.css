@@ -154,7 +154,6 @@ header{
     font-size: 1rem;
     margin: 1.3em 0em;
     font-weight: 700;
-    text-decoration: underline;
 }
 
 .info p{
@@ -324,11 +323,10 @@ header{
         font-size: 1.8rem;
         margin: 1.3em 0em;
         font-weight: 800;
-        text-decoration: underline;
     }
 
     .info p{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding: 0.85em 0em;
         font-weight: 500;
     }

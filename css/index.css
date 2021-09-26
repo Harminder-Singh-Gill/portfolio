@@ -891,18 +891,20 @@ header{
      }
 
      .player-content h1{
-        text-align: left;
          color:#292a2c;
-         font-size: 1.5rem;
+         font-size: 1.8rem;
          font-weight: 800;
-         margin-bottom: 1em;
+         margin:1em 0.12em;
+         width: auto;
      }
 
      .player-content p{
         text-align: left;
          color:#292a2c;
-         font-size: 1rem;
+         font-size: 1.3rem;
          font-weight: 500;
+         margin:1.3em;
+         width: auto;
      }
 
      .content-sharing-website{
@@ -929,6 +931,7 @@ header{
          flex-basis: 100%;
          color:#292a2c;
          padding: 2em;
+         margin: 0%;
      }
 
      .web-image img{
@@ -937,16 +940,18 @@ header{
      }
 
      .web-content h1{
-         text-align: left;
-         font-size:1.5rem;
+         font-size:1.8rem;
+         margin:1em 0.80em;
          color: #292a2c;
-         margin-bottom: 1em;
+         width: auto;
      }
 
      .web-content p{
         text-align: left;
-         font-size:1rem;
+         font-size:1.3rem;
          color:#292a2c;
+         margin:1em 0.80em;
+         width: auto;
      }
 
      .project-btn a{
