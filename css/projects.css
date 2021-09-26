@@ -130,15 +130,16 @@ header{
 
 .projects{
     display: block;
-    padding: 1em;
-    margin: 1em auto;
+    padding: 1em 0em;
+    margin: 1em 0em auto;
 }
 
 .projects h1{
-    font-size:1.8rem;
-    margin:1em 0.80em;
-    color: #292a2c;
-    width: auto;
+    display: flex;
+   font-size: 1.3em;
+   justify-content: center;
+   align-self: center;
+   margin: 1em;
 }
 
 .audio-player{
@@ -350,12 +351,14 @@ header{
     
     .content {
         font-family:'Roboto Slab'; 
+        padding-right: 0%;
     }
 
     .projects{
         width: 100%;
         margin-top: 8em;
-        padding: 1em;
+        margin: 1em 0em;
+        padding: 1em 0em;
     }
 
     .projects h1{
