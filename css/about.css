@@ -137,7 +137,7 @@ header{
 }
 
 .pic img{
-    width: 250px;
+    width: 150px;
     clip-path: circle();
 }
  
@@ -306,7 +306,7 @@ header{
     }
 
     .pic img{
-        width: 350px;
+        width: 11%;
         clip-path: circle();
     }
      
@@ -319,8 +319,8 @@ header{
     }
 
     .info h1{
-        font-size: 1.8rem;
-        margin: 1.3em 0em;
+        font-size: 1.6rem;
+        margin: 1em 0em;
         font-weight: 800;
     }
 
@@ -331,10 +331,11 @@ header{
     }
 
     .p2{
-        margin-bottom: 5em;
+        margin-bottom: 3em;
     }
      
     .p2 p{
+        font-size: 1.3rem;
         padding: 1em;
     }
 

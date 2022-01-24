@@ -150,11 +150,12 @@ header{
 }
 
 .intro-pic img{
-    max-width: 100%;
-    min-width: 35%;
+    width: 130px;
+    min-width: 30%;
     clip-path: circle();
     margin-bottom: 4em;
     margin-top: 2em;
+    margin-left: 2em;
     transform-origin: right;
     transform: translateX(3rem);
     animation: fadeIn 3s ease forwards;
@@ -647,7 +648,7 @@ header{
         padding-left: 6em;
         margin-bottom: 4em;
         width: 100%;
-        min-width: 500px;
+        min-width: 55%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -664,9 +665,9 @@ header{
     }
 
     .intro-pic img{
-        width: 100%;
+        width: 65%;
         clip-path: circle();
-        min-width: 45%;
+        min-width: 35%;
         justify-content: flex-end;
         opacity: 0;
         transform: translateY(3rem);
@@ -746,7 +747,7 @@ header{
 
     .intro-content a{
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-decoration: none;
         box-shadow: 3px black;
         background-color:#F2522E; 
@@ -765,7 +766,7 @@ header{
 
     .intro-content a:hover{
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-decoration: none;
         background-color: black;
         border: 1px solid black;
